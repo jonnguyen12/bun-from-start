@@ -1,0 +1,19 @@
+{
+	"name": "bun-from-start",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "bun run --hot index.ts",
+		"start": "bunx prisma migrate deploy && bun run index.ts"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@types/figlet": "^1.7.0",
+		"prisma": "^6.3.0"
+	},
+	"dependencies": {
+		"@prisma/client": "^6.3.0",
+		"figlet": "^1.8.0",
+		"hono": "^4.6.20"
+	}
+}
