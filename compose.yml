@@ -23,7 +23,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3002:3000"
+      - "3003:3000"
     env_file:
       - .env.prod
     stdin_open: true
