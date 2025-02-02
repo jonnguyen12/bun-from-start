@@ -11,7 +11,7 @@ COPY . .
 RUN bun install --production
 
 # Expose the port on which the API will listen
-EXPOSE 3000
+EXPOSE 3003
 
 # Run the server when the container launches
 CMD ["bun", "start"]
