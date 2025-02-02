@@ -43,7 +43,7 @@ app.get("/", async (c) => {
 		},
 	});
 
-	body = `${body}\nCreated user: ${user.name} (${user.email})\n`;
+	body = `${body}\nAdded user: ${user.name} (${user.email})\n`;
 
 	// count the number of users
 	const count = await prisma.user.count();
